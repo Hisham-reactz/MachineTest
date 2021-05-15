@@ -59,13 +59,8 @@ const App = () => {
   //store data on local storage
   const storeData = async value => {
     try {
-      const jsonValue = JSON.stringify(value);
-      const currentData = await AsyncStorage.getItem('@storage_Key');
-      if (currentData != null) {
-        await AsyncStorage.mergeItem('@storage_Key', jsonValue);
-      } else {
-        await AsyncStorage.setItem('@storage_Key', jsonValue);
-      }
+      const jsonValue = JSON.stringify([...data, ...value]);
+      await AsyncStorage.setItem('@storage_Key', jsonValue);
     } catch (e) {
       // saving error
     }
