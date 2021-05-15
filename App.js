@@ -155,7 +155,6 @@ const App = () => {
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
-    height: 888,
     paddingHorizontal: 24,
   },
   btn: {
