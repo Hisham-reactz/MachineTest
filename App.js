@@ -79,7 +79,7 @@ const App = () => {
   };
 
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider style={{flex: 1}}>
       <StatusBar barStyle={'dark-content'} />
       <Header
         leftComponent={{icon: 'menu', color: '#fff'}}
