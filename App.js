@@ -102,10 +102,11 @@ const App = () => {
           </View>
         }
       />
-      <View contentInsetAdjustmentBehavior="automatic">
+      <View style={{flex: 1}} contentInsetAdjustmentBehavior="automatic">
         <View
           style={{
             backgroundColor: Colors.white,
+            flex: 1,
           }}>
           <View style={styles.sectionContainer}>
             {isLoading ? (
